@@ -40,12 +40,12 @@ The Vehicle Counting System provides:
 
 ### Steps
 1. Clone the repository and extract the files.
-2. Open the project in **Visual Studio Code**.
-3. Run `Complete_Code.py`.
+2. Open the project.
+3. Run `VehicleCounting.py`.
 4. Select a video from the GUI.
-   ![Screenshot 2025-03-18 at 16 08 13](https://github.com/user-attachments/assets/f27d65e9-9bb6-40e0-9d09-9554e090c72c)
-6. View real-time vehicle tracking and final accuracy results.
-![Screenshot 2025-03-18 at 16 08 18](https://github.com/user-attachments/assets/62eed1e1-d296-4b55-ab25-b0eade714ecb)
+5. View real-time vehicle tracking and final accuracy results.
+
+![Screenshot 2025-03-18 at 16 10 26](https://github.com/user-attachments/assets/6c7d957f-a20a-4af0-a125-92e816126d61)
 
 ---
 
