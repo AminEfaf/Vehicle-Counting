@@ -1,4 +1,4 @@
-# Vehicle Counting System
+# Vehicle Counting
 
 This project focuses on detecting and counting vehicles in various conditions, such as day and night, using the YOLOv11 model. The system integrates real-time object detection, tracking, and pre-processing techniques to improve accuracy.
 
