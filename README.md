@@ -64,8 +64,8 @@ Two bar charts illustrate:
 ---
 
 ## Collaborators
-- **Mohammad Amin Efaf**
-- **Arman GhorbanPour**
+- [Mohammad Amin Efaf](https://github.com/aminefaf)  
+- [Arman Ghorbanpour](https://github.com/armanghorbanpour)
 
 ## Feedback
 We’d love to hear your thoughts and suggestions! Feel free to reach out or open an issue in this repository.
