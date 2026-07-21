@@ -79,5 +79,5 @@ The script provides:
 
 ## Collaborators
 
-* Mohammad Amin Efaf
-* Arman Ghorbanpour
+- [Mohammad Amin Efaf](https://github.com/aminefaf)  
+- [Arman Ghorbanpour](https://github.com/armanghorbanpour)
