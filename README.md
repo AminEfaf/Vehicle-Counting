@@ -1,71 +1,83 @@
 # Vehicle Counting
 
-This project focuses on detecting and counting vehicles in various conditions, such as day and night, using the YOLOv11 model. The system integrates real-time object detection, tracking, and pre-processing techniques to improve accuracy.
+This project was developed as an **Image Processing course project**. It demonstrates how image preprocessing techniques can improve the quality of traffic video frames before vehicle detection and counting.
 
----
+The project uses **YOLOv11** for vehicle detection and tracking, while the main focus is on the preprocessing pipeline applied to each frame.
 
-## Project Overview
+## Project structure
 
-The Vehicle Counting System provides:
-- **Real-time vehicle detection** using YOLOv11.
-- **Pre-processing techniques** to enhance image quality.
-- **Tracking system** for counting vehicle movement in different directions.
-- **Accuracy evaluation** by comparing detected counts with actual values.
+```text
+vehicle-counting/
+├── VehicleCounting.py
+├── requirements.txt
+├── README.md
+└── videos/
+    ├── night.mp4
+    ├── onewayup.mp4
+    ├── TestVideo2.mp4
+    └── TestVideo3.mp4
+```
 
----
+## Image processing pipeline
 
-## Features
+The following preprocessing techniques are applied sequentially to each video frame before detection:
 
-1. **YOLOv11 Model**
-   - Detects cars, motorcycles, buses, and trucks.
-2. **Pre-Processing Pipeline**
-   - Normalization, contrast enhancement, noise reduction, and shadow removal.
-3. **Real-Time Tracking**
-   - Identifies vehicle movement and prevents duplicate counts.
-4. **Accuracy Measurement**
-   - Compares detected counts with actual vehicle numbers.
-5. **Data Visualization**
-   - Generates bar charts showing detection accuracy.
+* Normalization
+* CLAHE (Contrast Limited Adaptive Histogram Equalization)
+* Bilateral filtering for noise reduction
+* Edge enhancement
+* Shadow removal
+* Logarithmic transformation
+* Unsharp masking
+* Edge blending
 
----
+These operations help improve contrast, reduce noise, enhance edges, and make vehicle features more visible under different lighting conditions.
 
-## Installation & Execution
+## How to Run
 
-### Prerequisites
-- Python 3.x
-- OpenCV
-- NumPy
-- Matplotlib
-- Ultralytics YOLO library
+1. Clone the repository:
 
-### Steps
-1. Clone the repository and extract the files.
-2. Open the project.
-3. Run `VehicleCounting.py`.
-4. Select a video from the GUI.
-5. View real-time vehicle tracking and final accuracy results.
+```bash
+git clone <repository-url>
+cd vehicle-counting
+```
 
-![Screenshot 2025-03-18 at 16 10 26](https://github.com/user-attachments/assets/6c7d957f-a20a-4af0-a125-92e816126d61)
+2. Install the required Python libraries:
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## Results & Visualization
+3. Make sure the video files are inside the `videos/` folder:
 
-### Accuracy Calculation
-The system computes accuracy by:
-- **Comparing actual vs. detected vehicle counts.**
-- **Measuring detection accuracy for each vehicle type.**
+```text
+videos/
+├── night.mp4
+├── onewayup.mp4
+├── TestVideo2.mp4
+└── TestVideo3.mp4
+```
 
-### Graphical Representation
-Two bar charts illustrate:
-- **Total detected vs. actual vehicles.**
-- **Accuracy percentage per vehicle type.**
+4. Run the script:
 
----
+```bash
+python VehicleCounting.py
+```
+
+5. A GUI window will appear. Select one of the available videos to start processing.
+
+6. The program will display the processed video with vehicle detection, tracking, directional counting, and accuracy results.
+
+## Output
+
+The script provides:
+
+* Real-time vehicle detection and tracking.
+* Upward and downward vehicle counts.
+* Total detected vehicles compared with actual counts.
+* Accuracy charts for overall detection and each vehicle type.
 
 ## Collaborators
-- [Mohammad Amin Efaf](https://github.com/aminefaf)  
-- [Arman Ghorbanpour](https://github.com/armanghorbanpour)
 
-## Feedback
-We’d love to hear your thoughts and suggestions! Feel free to reach out or open an issue in this repository.
+* Mohammad Amin Efaf
+* Arman Ghorbanpour
